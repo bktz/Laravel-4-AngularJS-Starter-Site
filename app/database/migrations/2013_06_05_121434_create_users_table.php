@@ -33,6 +33,7 @@ class CreateUsersTable extends Migration {
 			$table->enum('country', array('CA', 'US'));
 			$table->enum('province', array("AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"));
 			$table->enum('state', array("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA",	"KS", "KY", "LA", "ME",	"MD", "MA", "MI", "MN", "MS", "MO",	"MT", "NE", "NV", "NH",	"NJ", "NM", "NY", "NC",	"ND", "OH", "OK", "OR",	"PA", "RI", "SC", "SD",	"TN", "TX", "UT", "VT",	"VA", "WA", "WV", "WI",	"WY"));
+			$table->string('remember_token',100)->nullable();
 			$table->timestamps();
 		});
 
